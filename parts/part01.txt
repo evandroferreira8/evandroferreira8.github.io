@@ -106,6 +106,18 @@
   .contact-photo figcaption{text-align:left}
 }
 
+
+/* ===== Refinamento mobile + contatos + voltar ao topo ===== */
+.contact-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:680px;margin-top:30px}
+.contact-method{position:relative;min-height:88px;display:flex;flex-direction:column;justify-content:center;gap:7px;padding:16px 44px 16px 16px;border:1px solid rgba(27,30,28,.16);border-radius:10px;text-decoration:none;background:rgba(255,255,255,.34);transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.contact-method:hover,.contact-method:focus-visible{transform:translateY(-2px);border-color:rgba(50,104,115,.52);background:rgba(255,255,255,.64)}
+.contact-method-label{font-size:.60rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(27,30,28,.52)}
+.contact-method-value{font-size:.86rem;line-height:1.35;color:rgba(27,30,28,.88);overflow-wrap:anywhere}
+.contact-method-arrow{position:absolute;right:16px;top:16px;color:var(--petrol);font-size:.88rem}
+.back-to-top{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;align-items:center;justify-content:center;gap:7px;min-width:46px;height:46px;padding:0 14px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(13,16,14,.90);color:#f2f1ea;text-decoration:none;box-shadow:0 10px 34px rgba(0,0,0,.22);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease,background .2s ease}
+.back-to-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+.back-to-top:hover,.back-to-top:focus-visible{background:#1b201d}.back-to-top>span:first-child{font-size:1.05rem;line-height:1}.back-to-top-text{font-size:.57rem;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:560px){section:not(.hero){padding:62px 20px}.interlude{padding:20px 20px!important}.section-heading{margin-bottom:30px}.kicker{margin-bottom:10px}.lead{margin-top:18px}.about{gap:24px}.about-text{margin-top:24px;gap:17px}.portrait{margin-top:2px}.gallery{margin-top:2px}.paths .section-heading,.stories .section-heading,.archive .section-heading{margin-bottom:32px}.path{padding:22px 0}.story-pair{gap:12px}.archive-toolbar{margin-bottom:22px}.archive-item{padding:19px 0}.contact{gap:30px}.contact-copy>p:not(.kicker){margin:22px 0 0}.contact-methods{grid-template-columns:1fr;gap:8px;margin-top:24px}.contact-method{min-height:76px;padding:14px 42px 14px 14px}.contact-photo{margin-top:0}footer{padding:22px 20px 82px}.back-to-top{right:14px;bottom:14px;width:46px;min-width:46px;padding:0}.back-to-top-text{display:none}}
 </style>
 </head>
 <body>
