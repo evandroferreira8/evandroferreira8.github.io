@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111412">
+<meta name="description" content="Evandro Ferreira — jornalismo, imagem, comunicação e outras formas de contar histórias.">
+<title>Evandro Ferreira — Jornalismo, imagem e comunicação</title>
+<style>html,body{margin:0;background:#111412;color:#f1f1ec;font-family:Arial,sans-serif;min-height:100%}.loading{min-height:100vh;display:grid;place-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.65}</style>
+</head>
+<body>
+<div class="loading">Carregando…</div>
+<script>
+const parts=["parts/part01.txt","parts/part02.txt","parts/part03.txt","parts/part04.txt","parts/part05.txt","parts/part06.txt","parts/part07.txt","parts/part08.txt","parts/part09.txt","parts/part10.txt","parts/part11.txt","parts/part12.txt","parts/part13.txt","parts/part14.txt","parts/part15.txt","parts/part16.txt","parts/part17.txt","parts/part18.txt","parts/part19.txt"];
+const tail="galleryButtons.forEach((btn,index)=>btn.addEventListener('click',()=>open(index,btn)));\n    closeButtons.forEach(btn=>btn.addEventListener('click',close));\n    prev?.addEventListener('click',()=>render(current-1));\n    next?.addEventListener('click',()=>render(current+1));\n    document.addEventListener('keydown',(event)=>{\n      if(!lightbox.classList.contains('is-open'))return;\n      if(event.key==='Escape')close();\n      if(event.key==='ArrowLeft')render(current-1);\n      if(event.key==='ArrowRight')render(current+1);\n    });\n  }\n\n})();\n\n</script>\n</body>\n</html>";
+Promise.all(parts.map(p=>fetch(p).then(r=>{if(!r.ok)throw new Error(p);return r.text()})))
+.then(c=>{document.open();document.write(c.join('')+tail);document.close()})
+.catch(()=>{document.body.innerHTML='<div class="loading">Não foi possível carregar o site.</div>'});
+</script>
+</body>
+</html>
