@@ -110,11 +110,12 @@ fe/VkWRxfqsXu8ZWsOWZkmnk8NP3rINCHRbA+vleypMpMGVFSVnnG1oZOZMV86lYn+c2UOxwGST9UYVw
     <div class="contact-copy reveal">
       <p class="kicker">Contato</p>
       <h2>Ainda há <em>histórias para contar.</em></h2>
-      <p>Para conversar, colaborar ou acompanhar meu trabalho, estes são os caminhos que já estão públicos:</p>
-      <div class="contact-links">
-        <a href="https://br.linkedin.com/in/evandro-ferreira-7a199316a" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://linktr.ee/evandroferreira_" target="_blank" rel="noopener">Linktree ↗</a>
-        <a href="https://nupprar.ufrn.br/labtam/equipe.php" target="_blank" rel="noopener">LabTam/UFRN ↗</a>
+      <p>Para conversar, colaborar ou acompanhar meu trabalho, você pode falar comigo por aqui:</p>
+      <div class="contact-methods" aria-label="Formas de contato">
+        <a class="contact-method" href="mailto:evandroferreira8@gmail.com"><span class="contact-method-label">E-mail</span><span class="contact-method-value">evandroferreira8@gmail.com</span><span class="contact-method-arrow">↗</span></a>
+        <a class="contact-method" href="https://www.instagram.com/evandroferreira_/" target="_blank" rel="noopener"><span class="contact-method-label">Instagram</span><span class="contact-method-value">@evandroferreira_</span><span class="contact-method-arrow">↗</span></a>
+        <a class="contact-method" href="https://wa.me/5584996972269" target="_blank" rel="noopener"><span class="contact-method-label">WhatsApp</span><span class="contact-method-value">(84) 99697-2269</span><span class="contact-method-arrow">↗</span></a>
+        <a class="contact-method" href="https://br.linkedin.com/in/evandro-ferreira-7a199316a" target="_blank" rel="noopener"><span class="contact-method-label">LinkedIn</span><span class="contact-method-value">Evandro Ferreira</span><span class="contact-method-arrow">↗</span></a>
       </div>
     </div>
     <figure class="contact-photo reveal">
