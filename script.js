@@ -25,17 +25,6 @@
   const menu=document.querySelector('#menu');
   const navLinks=[...document.querySelectorAll('.menu a')];
 
-  const addGoNexusBridge=()=>{
-    if(!menu||document.querySelector('[data-go-nexus-bridge]'))return;
-    const link=document.createElement('a');
-    link.href='https://evandroferreira8.github.io/GoNexus/';
-    link.textContent='GO Nexus';
-    link.dataset.goNexusBridge='true';
-    link.setAttribute('aria-label','Abrir GO Nexus, ferramentas para Pokemon GO');
-    menu.appendChild(link);
-  };
-  addGoNexusBridge();
-
   const setHeader=()=>header?.classList.toggle('scrolled',window.scrollY>24);
   setHeader();
   window.addEventListener('scroll',setHeader,{passive:true});
@@ -45,7 +34,7 @@
       const open=menu.classList.toggle('open');
       button.setAttribute('aria-expanded',String(open));
     });
-    [...document.querySelectorAll('.menu a')].forEach(link=>link.addEventListener('click',()=>{
+    navLinks.forEach(link=>link.addEventListener('click',()=>{
       menu.classList.remove('open');
       button.setAttribute('aria-expanded','false');
     }));
